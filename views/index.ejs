@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <ul id="messages"></ul>
+  <i id="write"></i>
+  <form id="form" action="">
+    <input id="input" autocomplete="off" autofocus onkeypress="writing()" onblur="notWriting()" /><button>Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/javascripts/chat.js"></script>
+  </body>
+</html>
